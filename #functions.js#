@@ -1,5 +1,4 @@
 
-
 `// first function with undefined parameter
 
 
@@ -120,12 +119,3 @@ function sum(arrayy) {
 }
 
 console.log(sum(range(1,10)));
-
-
-switch(prompt("Enter the number")){
-case "1":
-    alert("You have entered the number 1");
-    break;
-case "2":
-    alert("You have enetred the number 2");
-}

@@ -1,5 +1,4 @@
 
-
 `// first function with undefined parameter
 
 
@@ -102,30 +101,3 @@ function sum(myNum) {
 
 console.log(sum(range(1,9)));
    
-//storing in an array and sum of all elements in array
-
-function range(start, end) {
-    var arrayy = [];
-    for (var i=start;i<=end;i++)
-	arrayy.push(i);
-    console.log(arrayy);
-    return arrayy;
-}
-
-function sum(arrayy) {
-    var total = 0;
-    for(var i=0;i<arrayy.length;i++)
-	total += arrayy[i];
-    return total;
-}
-
-console.log(sum(range(1,10)));
-
-
-switch(prompt("Enter the number")){
-case "1":
-    alert("You have entered the number 1");
-    break;
-case "2":
-    alert("You have enetred the number 2");
-}
