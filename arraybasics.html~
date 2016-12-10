@@ -1,0 +1,23 @@
+var myString ="Hello Vaibhav,How are you vaibhav";
+var stringPos = myString.indexOf("vaibhav");
+var stringCut = myString.substring(0,5);
+alert(stringCut);
+alert(stringPos);
+
+
+var myString ="Hello Vaibhav,How are you vaibhav";
+var stringPos = myString.indexOf("vaibhav");
+var stringCut = myString.subString(0,5);
+alert(stringCut);
+alert(stringPos);
+
+
+var myString ="Hello Vaibhav,How are you vaibhav";
+var stringPos = myString.indexOf("vaibhav");
+alert(stringPos);
+
+
+function (fn) {
+fn("Hello World");
+}
+fn(alert);

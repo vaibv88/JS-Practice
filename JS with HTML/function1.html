@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Function 1</title>
+  </head>
+  <body>
+    <script>
+      
+      function degFahrentoCelcius(degFahren) {
+
+		 var degCel=(5/9)*(degFahren-32);
+		  return degCel;
+		  
+      };
+
+      var degFahren=[202,50,30,108];
+      var degCel =[];
+      var i;
+      		  
+
+		  for(i=0;i<=3;i++) {
+				    degCel[i]= degFahrentoCelcius(degFahren[i]);
+
+				    }
+
+				    for (i=3;i>=0;i--) {
+        document.write("Value at" + i + "is" +degFahren[i]+ "degree fahren and converted to" +degCel[i]+ "celcius <br />");
+
+	document.write("Celcius is" +degCel[i]+"<br />");
+	}
+
+				    </script>
+    </body>
+    </html>
+
+
+			

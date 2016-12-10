@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title> Chapter 1 exercise2</title>
+  </head>
+  <body bgcolor="white">
+    <p>Paragraph</p>
+    <script>
+      //first block of script tag
+      alert("We are in first block");
+    </script>
+    <p>second block</p>
+    <script>

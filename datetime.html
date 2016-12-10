@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>date time now</title>
+
+</head>
+<body>
+  <script>
+    var dateNow = new Date();
+    var dayNow = dateNow.getDay();
+    var yearNow = dateNow.getFullYear();
+    var monthNow = dateNow.getMonth();
+    var fullDate = dateNow.toDateString();
+
+    var hourNow = dateNow.getHours();
+    var minuteNow = dateNow.getMinutes();
+    var secondsNow = dateNow.getSeconds();
+
+    document.write("Today is date as Day: "+dayNow + "Month is "+monthNow+"Year is: " +yearNow );
+    document.write(fullDate);
+
+    if(minuteNow<10){
+		   minuteNow = "0"+ minuteNow;
+		   }
+		   if(secondNow<10) {
+				    secondNow = "0"+secondNow;
+				    }
+		   
+
+    document.write("Time is "+hourNow + ":" +minuteNow+ ":" +secondsNow);
+  </script>
+</body>
+</html>

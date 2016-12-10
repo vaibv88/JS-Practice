@@ -1,0 +1,37 @@
+var myString ="Hello Vaibhav,How are you vaibhav";
+var stringPos = myString.indexOf("vaibhav");
+var stringCut = myString.substring(0,5);
+alert(stringCut);
+alert(stringPos);
+
+
+var myString ="Hello Vaibhav,How are you vaibhav";
+var stringPos = myString.indexOf("vaibhav");
+var stringCut = myString.subString(0,5);
+alert(stringCut);
+alert(stringPos);
+
+
+var myString ="Hello Vaibhav,How are you vaibhav";
+var stringPos = myString.indexOf("vaibhav");
+alert(stringPos);
+
+
+function (fn) {
+fn("Hello World");
+}
+fn(alert);
+
+var degFahren = [212, 32, 178];
+var degCel=[];
+var i;
+for(i=0;i<=2;i++) {
+		  degCel[i]=(5/9)*(degFahren[i]-32);}
+
+		  for(i=2;i>=0;i--) {
+  console.log("Value at " +i "is" +degFahren[i] +"Degrees fahrenheit");
+
+  console.log("Which is " +degCel[i] +"degrees Celcius");
+  }
+
+  

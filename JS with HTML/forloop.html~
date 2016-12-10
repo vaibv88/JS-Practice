@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>For Loop </title>
+  </head>
+  <body>
+    <script>
+
+      var degFahren = [212, 32, 178];
+
+      var degCel=[];
+
+      var i;
+
+      for(i=0;i<=2;i++) {
+		       degCel[i]=(5/9)*(degFahren[i]-32);
+
+		       }
+
+		   for(i=2;i>=0;i--) {
+				     document.write("Value at " + i "is" + degFahren[i] + "Degrees fahrenheit" );
+				     
+			       document.write("Which is " + degCel[i] + "degrees Celcius");
+			       }
+
+			       </script>
+  </body>
+  </html>
+		       
+		       
+
+			  

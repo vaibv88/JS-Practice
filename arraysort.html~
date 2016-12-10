@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset = "utf-8">
+    <title> Array sort</title>
+    <body>
+      <script>
+	var myArray = ["vaibhav","shubhad","neelam","aai","bhavya","anna","bai"];
+
+	var opt = prompt("Enter 1 for Sort and 2 for revese sort ",1);
+
+	if(opt==1) {
+	myArray2.sort();
+	document.write(myArray);
+	}
+	else if(opt==2) {
+	myArray.reverse();
+	document.write(myArray);
+	}
+
+      </script>
+    </body>
+    </html>

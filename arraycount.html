@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset = "utf-8">
+    <title>Counting charachters</title>
+  </head>
+  <body>
+    <script>
+      var myString = "Helll this is Vaibhav, Javascript fond" +
+                      "I love Javascript, Javascript is awsome" +
+      "Anyone can learn Javascript, Javascript is best";
+
+      var stringCount = 0;
+      var stringPos = 0;
+
+      while(stringPos != -1)      {
+      stringPos = myString.indexOf("Javascript", stringPos);
+      
+
+      if(stringPos != -1)      {
+      stringCount++;
+      stringPos++;
+      }
+      }
+      
+      
+      
+
+      document.write("There are" +stringCount + "occurances of" +stringPos);
+
+    </script>
+  </body>
+  </html>
+      
+      
+       

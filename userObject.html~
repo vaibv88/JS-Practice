@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset = "utf-8">
+    <title>User Object Creation</title>
+  </head>
+  <body>
+    <script>
+
+      var firstname;
+      var lastname;
+
+      function createPerson(personName, personLastname) {
+
+      return {
+
+      firstName: firstName;
+      lastName: lastName;
+
+      getFullName: function() {
+
+      return this.firstName+""+this.lastName;
+      },
+
+      greet: function(person) {
+      alert("Hi" +person.getFullName()+ "I am"+this.getFullName);
+      }
+      };
+      }
+
+      var vaibhavV=createPerson(Vaibhav,Vhanale);
+      vaibhavV.greet(Ameay);
+    </script>
+  </body>
+  </html>
+      
