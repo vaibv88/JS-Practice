@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset = "utf-8">
+    <title>Browser Identification</title>
+  </head>
+
+  <body>
+    <script>
+
+      function getBrowserName() {
+      
+
+      var isBrowser = navigator.userAgent;
+
+      if(isBrowser.indexOf("MSIE")>0) {
+
+      alert("This is IE");
+      }
+
+      else if(isBrowser.indexOf("Firefox")>=0) {
+
+      alert("This is Firefox");
+      }
+      
+
+      else if(isBrowser.indexOf("Chromium")>=0)  {
+
+      alert("This is chromium");
+      }
+
+      else if(isBrowser.indexOf("Netscape")>=0)  {
+
+      alert("This is netscape");
+      
+      }
+      else {
+
+      return "Unknown";
+      }
+
+      }
+
+
+      function getBrowserVersion()  {
+
+      var ua = navigator.useragent;
+
+      var browser = getBrowserName();
+
+      var findIndex = ua.indexOf(browser)+browser.length+1;
+      var browserVersion = parseFloat(ua.substr(findindex,findindex+3));
+      return browserVersion;
+
+      }
+
+      var browserName = getBrowserName();
+      var browserVersion = getBrowseVersion();
+
+      if (browserName == "MSIE") {
+      if (browserVersion < 9) {
+			   document.write("Your version of IE is too old");
+			   } else {
+			   document.write("Your version of IE is fully supported");
+			   }
+			   } else if (browserName == "Firefox") {
+			   document.write("Firefox is fully supported");
+			   } else if (browserName == "Safari") {
+			   document.write("Safari is fully supported");
+			   } else if (browserName == "Chrome") {
+			   document.write("Chrome is fully supported");
+			   } else if (browserName == "Opera") {
+			   document.write("Opera is fully supported");
+			   } else {
+			   document.write("Sorry this browser version is not supported");
+			   }
+			   </script>
+    
+
+  </body>
+  
+  </html>
+      

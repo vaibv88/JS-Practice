@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>GeoLocation</title>
+    <meta charset ="utf-8">
+  </head>
+  <body>
+    <script>
+
+
+      function success(position) {
+
+      var coords = position.coords;
+      var latitude = coords.latitude;
+      var longitude = coords.longitude;
+
+
+      document.write("Latitude: "+latitude + "Longitude: "+longitude);
+      }
+
+      function geoError(errorObj)  {
+      alert(errorObj.message);
+      }
+
+      navigator.geolocation.getCurrentPosition(success, geoError);
+
+      
+
+    </script>
+  </body>
+  </html>
+
+      
