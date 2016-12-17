@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang ="en">
+<html>
+  <head>
+    <title>Form Action 2</title>
+    
+  </head>
+  <body>
+    <form action="" name="form1">
+      <input type="button" name = "myButton" value="Button CLicked 0 Times" >
+    </form>
+
+    <script>
+      var myButton = document.form1.myButton;
+
+      var numClick=0;
+      
+      function numOfclicks()  {
+
+      numClick++;
+      myButton.value="Button Clicked" + numClick + "Times";
+      }
+
+      myButton.addEventListener("click", numOfclicks);
+    </script>
+  </body>
+  </html>
+

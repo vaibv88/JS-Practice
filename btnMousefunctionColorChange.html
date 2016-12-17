@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+  <head>
+    <title>Button color change color in function</title>
+  </head>
+  <body>
+    <input type="button" value="Hello There" id="btn" onmouseover="onMouseOver()" onmouseout="onMouseOut()"/>
+    <script>
+
+      function onMouseOver()  {
+
+      var btnID = document.getElementById("btn");
+
+      btnID.style.color="red";
+      btnID.style.background="yellow";
+      }
+
+      function onMouseOut()  {
+
+      var btnID = document.getElementById("btn");
+
+      btnID.style.background="cyan";
+      btnID.style.color="orange";
+
+      }
+    </script>
+  </body>
+  </html>

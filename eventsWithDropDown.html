@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+  <head>
+    <title> Event wit hDrop Doen with Select </title>
+  </head>
+  <body>
+    <form action="" name="theform">
+      <select name="theDay" size="5">
+	<option value="0" selected="selected" >Monday</option>
+	<option value="1">Tuesday</option>
+	<option value="2">Wednesday</option>
+	<option value="3">Thursday</option>
+	<option value="4">Friday</option>
+	<option value="5">Saurday</option>
+      </select>
+      <br>
+      <input type="button" value="Remove Wednesday" name="removebtn"/>
+      <input type="button" value="Addd wednesday" name="addbtn"/>
+      </select>
+    </form>
+<script>
+
+  var myForm=document.theform;
+
+  function removebtnWed()  {
+
+  var options = myForm.theDay.options;
+
+  if(options[2].text=="Wednesday")  {
+
+  options[2]=null;
+  }
+  else {
+  alert("Wednesday is not present");
+  }
+  }
+
+  function addButton() {
+
+  var options = myForm.theDay.options;
+
+  if(options[2].text!="Wednesday") {
+
+  var lastoption = new Option();
+  options[options.length]=lastoption;
+
+  for(var index=options.length-1 ;index>2; index--)  {
+
+  var currentoption = options[index];
+  var previousoption = options[index-1];
+
+  currentoption.text = previousoption.text;
+  currentoption.value=previousoption.value;
+}
+  var option = new Option("Wednesday", 2);
+
+  options[2] = option;
+
+ }
+  else {
+  alert("Do you want 2 Wednesday??");
+  }
+
+}
+
+  myForm.removebtn.addEventListener("click",removebtnWed);
+  myForm.addbtn.addEventListener("click",addButton);
+</script>
+</body>
+</html>

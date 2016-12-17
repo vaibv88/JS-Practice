@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mouse event on on objeect</title>
+  </head>
+  <body>
+    <a href="hello.html" id="megaCan">Hello this is mouse event</a>
+    <script>
+      function megaCan() {
+
+      alert("HEllo we passed JS in HTML event");
+      return true;
+      }
+
+      document.getElementByID("megaCan").onclick = megaCan;
+    </script>
+  </body>
+  </html>

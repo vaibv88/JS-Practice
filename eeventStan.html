@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang = "en">
+<html>
+  <head>
+    <meta charset = "utf-8">
+    <title>Original DOM model</title>
+  </head>
+  <body>
+    <a id="somelink" href="someon.html">
+      Hello Thsi is original wat to modify events inJS wit hListener
+    </a>
+    <script>
+
+      var link = document.getElementById("somelink");
+
+      link.addEventListener("click", function(e)  {
+      alert("Hello You modified It");
+      e.preventDefault();
+      });
+    </script>
+  </body>
+  </html>

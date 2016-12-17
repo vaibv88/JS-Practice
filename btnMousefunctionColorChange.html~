@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+  <head>
+    <title>Button color change color in function</title>
+  </head>
+  <body>
+    <input type="button" value="Hello There" id="btn" onmouseover="onMouseOver()">
+    <script>
+
+      function onMouseOver()  {
+
+      var btnId = documnet.getElementByID("btn");
+
+      btnId.style.color="red";
+      btnId.style.background="yellow";
+      }
+      

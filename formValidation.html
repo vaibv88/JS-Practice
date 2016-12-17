@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang ="en">
+<html>
+  <head>
+    <title>Form Validation</title>
+  </head>
+  <body>
+    <form input ="" name="form1">
+      <p>
+	Enter Your Name:<input type="text" name="txtName">
+      </p>
+      <p>
+	Enter your age:<input type="text" name="txtAge" size="3" maxlength="3">
+      </p>
+      <p>
+	<input type="button" value="Check Details" name="btnCheckForm">
+      </p>
+    </form>
+    <script>
+
+      var myForm = document.form1;
+
+      function checkButton(e)  {
+
+      var txtName = myForm.txtName;
+      var txtAge = myForm.txtAge;
+
+      if(txtName.value=="" || txtAge.value=="") {
+        alert("Please fill the Name and age");
+         if(txtName.value=="") {
+          txtName.focus();
+      }
+
+      else {
+      txtAge.focus();
+      }
+
+    }else {
+
+      alert("Thanks for completing form");
+      }
+
+
+      }
+
+      function textblur(e)  {
+
+      target = e.target;
+
+      if(isNaN(target.value))  {
+
+      alert("Please enter the valid value");
+      target.focus();
+      target.select();
+
+      }
+      }
+
+      function textAlert(e)  {
+
+      alert("Helllo" +e.target.value);
+      }
+
+      myForm.txtName.addEventListener("change",textAlert);
+
+      myForm.txtName.addEventListener("change",checkButton);
+      myForm.txtAge.addEventListener("blur",textblur);
+    </script
+       </body>
+  </html>

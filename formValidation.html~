@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang ="en">
+<html>
+  <head>
+    <title>Form Validation</title>
+  </head>
+  <body>
+    <form input ="" name="form1">
+      <p>
+	Enter Your Name:<input type="text" name="txtName">
+      </p>
+      <p>
+	Enter your age:<input type="text" name="txtAge" size="3" maxlength="3">
+      </p>
+      <p>
+	<input type="button" value="Check Details" name="btnCheckForm">
+      </p>
+    </form>
+    <script>
+
+      var myForm = document.form1;
+
+      function checkButton(e)  {
+
+      var txtName = myForm.txtName;
+      var txtAge = myForm.txtAge;
+
+      if(txtName.value=="" || txtAge.value=="") {
+        alert("Please fill the Name and age");
+         if(txtName.value=="") {
+          txtName.focus();
+      }
+
+      else {
+      txtAge.focus();
+      }
+
+    }else {
+
+      alert("Thanks for completing form");
+      }
+
+
+      }
+
+      myForm.txtName.addEventListener("change",checkButton);
+    </script
+       </body>
+  </html>

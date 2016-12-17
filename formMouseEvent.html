@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang = "en">
+<html>
+  <head>
+    <title>
+      Mouse form Action</title>
+  </head>
+  <body>
+    <form action="" name ="form1">
+      <input type = "button" name ="button1" value ="Mouse Goes Up!">
+    </form>
+    <script>
+
+      var button1=document.form1.button1;
+
+      function mouseUp()  {
+
+      button1.value="Mouse Goes Up";
+      }
+
+      function mouseDown() {
+
+      button1.value="Mouse Goes Down";
+      }
+
+      button1.addEventListener("mouseup", mouseUp);
+      button1.addEventListener("mousedown", mouseDown);
+    </script>
+  </body>
+  </html>
+
+     
