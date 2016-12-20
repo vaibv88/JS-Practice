@@ -14,7 +14,7 @@
       </p>
       <p>
 	Select the required computer configuration</p>
-      
+
       <p>
 	<input type="radio" name="cpuRadspeed" checked="checked" value="3.2GHz">
 
@@ -29,24 +29,24 @@
       <script>
 
 	var myForm = document.form1;
+  
 
 	function getSelectSpeedvalue(e)  {
 
 	var radios = myForm.cpuRadspeed;
 
 	for (var index=0; index<radios.length; index++)  {
-					       
-					       if(radios[index].checked) {
-					       
-					       return radios[index].value;
+    return radios[index].value;
 
-					       
+					  if(radios[index].checked) {
+
+
+
 					       }
 					       }
 					       return "";
 					       }
 					       function findIndexofspeed(radio)	{
-
 					       var radios = myForm.cpuRadspeed;
 
 					       for(var index=0; index<radios.length; index++) {
@@ -85,15 +85,6 @@
 																	     myForm.radCpuSpeed[index].addEventListener("click", radCpuSpeedClick);
 																	     }
 																	     myForm.btnCheck.addEventListener("click", btnCheckClick);
-																	     </script>
+		</script>
   </body>
   </html>
-
-					       
-
-					       
-
-      
-
-      
-	

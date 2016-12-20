@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+  <head>
+    <title>ON lcick image change</title>
+  </head>
+  <body>
+    <script>
+
+      imgSource = ["hello.jpeg", "buddha.png","vaibhav.jpeg","rocket.png"];
+
+      function imgChange(that)  {
+
+      var imgchange = Math.round(Math.random()*);
+
+      while (that.src.indexOf(imgChange[imgchange])!=-1) {
+
+      imgchange = Math.round(Math.random()*3);
+      }
+
+      that.src=imgSource[imgchange];
+      }
+
+    </script>
+  </body>
+  </html>
+      
