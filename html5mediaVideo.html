@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+  <head>
+    <title> HTML 5 media control and video</title>
+  </head>
+  <body>
+
+      <div><button id="playbackController">Play</button>
+      </div>
+      <video id="bbbvideo">
+	<source src="abc.mp3">
+      </video>
+      <script>
+
+	function videoPlay(e)  {
+
+	var target = e.target;
+
+	var video= document.getElementById("bbbvideo");
+
+	if(target.innerHTML=="Play")  {
+
+	video.play();
+	target.innerHTML="Pause";
+	}
+
+	else {
+	video.pause();
+	target.innerHTML="Play";
+	}
+	}
+
+	document.getElementById("playbackController").addEventListener("click",videoPlay);
+      </script>
+  </body>
+</html>
+
